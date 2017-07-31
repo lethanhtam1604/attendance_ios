@@ -1,0 +1,1431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EEC47061F0F6DB800FBAE89 /* FaceRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC47051F0F6DB700FBAE89 /* FaceRecognitionViewController.swift */; };
+		0EEC47081F0F6DDC00FBAE89 /* RealTimeCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC47071F0F6DDC00FBAE89 /* RealTimeCameraViewController.swift */; };
+		0EEC47201F0F6E1100FBAE89 /* FJFaceDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC470F1F0F6E1100FBAE89 /* FJFaceDetector.mm */; };
+		0EEC47211F0F6E1100FBAE89 /* FJFaceRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC47111F0F6E1100FBAE89 /* FJFaceRecognizer.mm */; };
+		0EEC47221F0F6E1100FBAE89 /* haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC47121F0F6E1100FBAE89 /* haarcascade_eye_tree_eyeglasses.xml */; };
+		0EEC47231F0F6E1100FBAE89 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC47131F0F6E1100FBAE89 /* haarcascade_frontalface_alt2.xml */; };
+		0EEC47241F0F6E1100FBAE89 /* person1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC47151F0F6E1100FBAE89 /* person1.jpg */; };
+		0EEC47251F0F6E1100FBAE89 /* person2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC47161F0F6E1100FBAE89 /* person2.jpg */; };
+		0EEC47261F0F6E1100FBAE89 /* person3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC47171F0F6E1100FBAE89 /* person3.jpg */; };
+		0EEC47271F0F6E1100FBAE89 /* person4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC47181F0F6E1100FBAE89 /* person4.jpg */; };
+		0EEC47281F0F6E1100FBAE89 /* person5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC47191F0F6E1100FBAE89 /* person5.jpg */; };
+		0EEC47291F0F6E1100FBAE89 /* person6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC471A1F0F6E1100FBAE89 /* person6.jpg */; };
+		0EEC472A1F0F6E1100FBAE89 /* person7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC471B1F0F6E1100FBAE89 /* person7.jpg */; };
+		0EEC472B1F0F6E1100FBAE89 /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC471D1F0F6E1100FBAE89 /* UIImage+OpenCV.mm */; };
+		0EEC472E1F0F6F7C00FBAE89 /* RealTime.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC472D1F0F6F7C00FBAE89 /* RealTime.storyboard */; };
+		760167DDD197E4405CC3FC12 /* Pods_AttendanceUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6491BFC37276A799097FC53C /* Pods_AttendanceUser.framework */; };
+		AA27BCA8936DE0739A462AC4 /* Pods_Attendance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194D8078975417919BE82806 /* Pods_Attendance.framework */; };
+		E61B8E241F0CA56C00FC6034 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B8E231F0CA56C00FC6034 /* SettingView.swift */; };
+		E61B8E261F0CA6DB00FC6034 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B8E251F0CA6DB00FC6034 /* ProfileViewController.swift */; };
+		E61B8E281F0CA6EC00FC6034 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B8E271F0CA6EC00FC6034 /* ProfileView.swift */; };
+		E61B8E2A1F0CCAE800FC6034 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B8E291F0CCAE800FC6034 /* ChangePasswordView.swift */; };
+		E61B8E2C1F0CCAF800FC6034 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B8E2B1F0CCAF800FC6034 /* ChangePasswordViewController.swift */; };
+		E61B8E2E1F0CDDCA00FC6034 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B8E2D1F0CDDCA00FC6034 /* Group.swift */; };
+		E61BE2941F09FAEA0062339D /* AttendanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BE2931F09FAEA0062339D /* AttendanceTableViewCell.swift */; };
+		E61BE2961F0A35050062339D /* AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BE2951F0A35050062339D /* AttendanceViewController.swift */; };
+		E61BE2981F0A351E0062339D /* AttendanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BE2971F0A351E0062339D /* AttendanceView.swift */; };
+		E61BE29A1F0A41E20062339D /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BE2991F0A41E20062339D /* DatabaseHelper.swift */; };
+		E61BE29C1F0A451A0062339D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E61BE29B1F0A451A0062339D /* GoogleService-Info.plist */; };
+		E61BE29E1F0A51320062339D /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BE29D1F0A51320062339D /* SplashScreenView.swift */; };
+		E61BE2A01F0A513F0062339D /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BE29F1F0A513F0062339D /* SplashScreenViewController.swift */; };
+		E622B53F1F204DB500D26C00 /* ImageUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E642479F1F1F9B3300C384D2 /* ImageUrl.swift */; };
+		E622B5401F204DD000D26C00 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64247A31F1FBAAE00C384D2 /* PhotoCollectionViewCell.swift */; };
+		E622B5411F204DD300D26C00 /* EmployeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64247A11F1FB6CB00C384D2 /* EmployeHeaderView.swift */; };
+		E622B5421F204DFF00D26C00 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD00BB1F18A43600912AFA /* GroupViewController.swift */; };
+		E622B5431F204E2300D26C00 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649B4871F1859050014E861 /* CalendarView.swift */; };
+		E622B5441F204E2600D26C00 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD00BD1F18A44500912AFA /* GroupView.swift */; };
+		E622B5451F204E6600D26C00 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649B4891F1859150014E861 /* CalendarViewController.swift */; };
+		E62982441F0E3973006A22CB /* Attendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62982431F0E3973006A22CB /* Attendance.swift */; };
+		E62982461F0E3D98006A22CB /* AttendanceTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62982451F0E3D98006A22CB /* AttendanceTime.swift */; };
+		E63588861F170A4B0073D3F9 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63588851F170A4B0073D3F9 /* IntroViewController.swift */; };
+		E63588881F170A6D0073D3F9 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63588871F170A6D0073D3F9 /* IntroView.swift */; };
+		E635888A1F170B8D0073D3F9 /* ItemIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63588891F170B8D0073D3F9 /* ItemIntroView.swift */; };
+		E6377D7C1F021AFB00023222 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6377D7B1F021AFB00023222 /* Employee.swift */; };
+		E6377D7E1F021D4900023222 /* EmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6377D7D1F021D4900023222 /* EmployeeView.swift */; };
+		E6377D801F021D6300023222 /* EmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6377D7F1F021D6300023222 /* EmployeeViewController.swift */; };
+		E6377D821F021D7000023222 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6377D811F021D7000023222 /* EmployeeTableViewCell.swift */; };
+		E6396B461F14689E006F12C7 /* EmployeeGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C70371F09DB530040C71C /* EmployeeGroupView.swift */; };
+		E6396B471F14689E006F12C7 /* AttendanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BE2931F09FAEA0062339D /* AttendanceTableViewCell.swift */; };
+		E6396B481F14689E006F12C7 /* AttendanceDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECE31F0F364900A216A3 /* AttendanceDetailTableViewCell.swift */; };
+		E6396B491F14689E006F12C7 /* UIView+TouchHighlighting.m in Sources */ = {isa = PBXBuildFile; fileRef = E645D9581EF398DE00C91617 /* UIView+TouchHighlighting.m */; };
+		E6396B4A1F14689E006F12C7 /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC471D1F0F6E1100FBAE89 /* UIImage+OpenCV.mm */; };
+		E6396B4B1F14689E006F12C7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D95E1EF39B7100C91617 /* MainViewController.swift */; };
+		E6396B4C1F14689E006F12C7 /* FaceRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC47051F0F6DB700FBAE89 /* FaceRecognitionViewController.swift */; };
+		E6396B4D1F14689E006F12C7 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035C21F00C956000C5FA5 /* ForgotPasswordViewController.swift */; };
+		E6396B4E1F14689E006F12C7 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C02F1E1F06580100B003B7 /* CameraViewController.swift */; };
+		E6396B4F1F14689E006F12C7 /* NSData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9111EF3982700C91617 /* NSData.swift */; };
+		E6396B501F14689E006F12C7 /* NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9101EF3982700C91617 /* NSArray.swift */; };
+		E6396B511F14689E006F12C7 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9141EF3982700C91617 /* NSObject.swift */; };
+		E6396B521F14689E006F12C7 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035C81F00FCC4000C5FA5 /* Menu.swift */; };
+		E6396B531F14689E006F12C7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BB5F61F0BB186001AE835 /* HomeView.swift */; };
+		E6396B541F14689E006F12C7 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9121EF3982700C91617 /* NSDate.swift */; };
+		E6396B551F14689E006F12C7 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BE29D1F0A51320062339D /* SplashScreenView.swift */; };
+		E6396B561F14689E006F12C7 /* AddEmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C02F191F0639D900B003B7 /* AddEmployeeView.swift */; };
+		E6396B571F14689E006F12C7 /* FJFaceDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC470F1F0F6E1100FBAE89 /* FJFaceDetector.mm */; };
+		E6396B581F14689E006F12C7 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035C41F00FC70000C5FA5 /* MenuView.swift */; };
+		E6396B591F14689E006F12C7 /* ExportEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECF51F0F733900A216A3 /* ExportEmployeeViewController.swift */; };
+		E6396B5A1F14689E006F12C7 /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECE71F0F4C3D00A216A3 /* TrainingViewController.swift */; };
+		E6396B5B1F14689E006F12C7 /* CaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D8E81EF3981B00C91617 /* CaptureButton.swift */; };
+		E6396B5C1F14689E006F12C7 /* TrainingDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECED1F0F4F9500A216A3 /* TrainingDetailTableViewCell.swift */; };
+		E6396B5D1F14689E006F12C7 /* AttendanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BE2971F0A351E0062339D /* AttendanceView.swift */; };
+		E6396B5E1F14689E006F12C7 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BE29F1F0A513F0062339D /* SplashScreenViewController.swift */; };
+		E6396B5F1F14689E006F12C7 /* RealTimeCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC47071F0F6DDC00FBAE89 /* RealTimeCameraViewController.swift */; };
+		E6396B601F14689E006F12C7 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9171EF3982700C91617 /* UIImage.swift */; };
+		E6396B611F14689E006F12C7 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035BA1F00ADEF000C5FA5 /* RegisterView.swift */; };
+		E6396B621F14689E006F12C7 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9191EF3982700C91617 /* UITableView.swift */; };
+		E6396B631F14689E006F12C7 /* AddGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C703D1F09E3F70040C71C /* AddGroupView.swift */; };
+		E6396B641F14689E006F12C7 /* SizeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D8EB1EF3981B00C91617 /* SizeUtils.swift */; };
+		E6396B651F14689E006F12C7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B8E271F0CA6EC00FC6034 /* ProfileView.swift */; };
+		E6396B661F14689E006F12C7 /* AttendanceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECDF1F0F350A00A216A3 /* AttendanceDetailView.swift */; };
+		E6396B671F14689E006F12C7 /* MenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035CC1F00FD15000C5FA5 /* MenuHeaderView.swift */; };
+		E6396B681F14689E006F12C7 /* AddGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C703F1F09E5510040C71C /* AddGroupViewController.swift */; };
+		E6396B691F14689E006F12C7 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D91C1EF3982700C91617 /* UIViewController.swift */; };
+		E6396B6A1F14689E006F12C7 /* AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BE2951F0A35050062339D /* AttendanceViewController.swift */; };
+		E6396B6B1F14689E006F12C7 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9341EF3983500C91617 /* UserDefaultManager.swift */; };
+		E6396B6C1F14689E006F12C7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9151EF3982700C91617 /* String.swift */; };
+		E6396B6D1F14689E006F12C7 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D91B1EF3982700C91617 /* UIView.swift */; };
+		E6396B6E1F14689E006F12C7 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B8E291F0CCAE800FC6034 /* ChangePasswordView.swift */; };
+		E6396B6F1F14689E006F12C7 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B8E2D1F0CDDCA00FC6034 /* Group.swift */; };
+		E6396B701F14689E006F12C7 /* Attendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62982431F0E3973006A22CB /* Attendance.swift */; };
+		E6396B711F14689E006F12C7 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B8E2B1F0CCAF800FC6034 /* ChangePasswordViewController.swift */; };
+		E6396B721F14689E006F12C7 /* AttendanceDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECDB1F0F2AD300A216A3 /* AttendanceDate.swift */; };
+		E6396B731F14689E006F12C7 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D91A1EF3982700C91617 /* UITextField.swift */; };
+		E6396B741F14689E006F12C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D8D11EF3952D00C91617 /* AppDelegate.swift */; };
+		E6396B751F14689E006F12C7 /* AttendanceTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62982451F0E3D98006A22CB /* AttendanceTime.swift */; };
+		E6396B761F14689E006F12C7 /* EmployeeGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C70391F09DB6B0040C71C /* EmployeeGroupViewController.swift */; };
+		E6396B771F14689E006F12C7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D8ED1EF3981B00C91617 /* Utils.swift */; };
+		E6396B781F14689E006F12C7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B8E231F0CA56C00FC6034 /* SettingView.swift */; };
+		E6396B791F14689E006F12C7 /* EmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6377D7D1F021D4900023222 /* EmployeeView.swift */; };
+		E6396B7A1F14689E006F12C7 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BB5F41F0BAB9C001AE835 /* SettingViewController.swift */; };
+		E6396B7B1F14689E006F12C7 /* ExportEmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECF31F0F732900A216A3 /* ExportEmployeeView.swift */; };
+		E6396B7C1F14689E006F12C7 /* AddEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C02F1B1F0639E700B003B7 /* AddEmployeeViewController.swift */; };
+		E6396B7D1F14689E006F12C7 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035C01F00C93C000C5FA5 /* ForgotPasswordView.swift */; };
+		E6396B7E1F14689E006F12C7 /* FJFaceRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC47111F0F6E1100FBAE89 /* FJFaceRecognizer.mm */; };
+		E6396B7F1F14689E006F12C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035BC1F00ADFE000C5FA5 /* LoginViewController.swift */; };
+		E6396B801F14689E006F12C7 /* MTCompoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E645D9561EF398DE00C91617 /* MTCompoundButton.m */; };
+		E6396B811F14689E006F12C7 /* AIDatePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E645D94D1EF398DE00C91617 /* AIDatePickerController.m */; };
+		E6396B821F14689E006F12C7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035CE1F00FF73000C5FA5 /* User.swift */; };
+		E6396B831F14689E006F12C7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035BE1F00AE06000C5FA5 /* RegisterViewController.swift */; };
+		E6396B841F14689E006F12C7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9601EF39B7D00C91617 /* MainView.swift */; };
+		E6396B851F14689E006F12C7 /* TrainingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECEB1F0F4E7600A216A3 /* TrainingDetailViewController.swift */; };
+		E6396B861F14689E006F12C7 /* EmployeeGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C703B1F09DB9F0040C71C /* EmployeeGroupTableViewCell.swift */; };
+		E6396B871F14689E006F12C7 /* NSDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9131EF3982700C91617 /* NSDictionary.swift */; };
+		E6396B881F14689E006F12C7 /* AttendanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECE11F0F355A00A216A3 /* AttendanceDetailViewController.swift */; };
+		E6396B891F14689E006F12C7 /* MTViewHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = E645D9541EF398DE00C91617 /* MTViewHighlighter.m */; };
+		E6396B8A1F14689E006F12C7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035B81F009EF4000C5FA5 /* LoginView.swift */; };
+		E6396B8B1F14689E006F12C7 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9161EF3982700C91617 /* UIColor.swift */; };
+		E6396B8C1F14689E006F12C7 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6377D7B1F021AFB00023222 /* Employee.swift */; };
+		E6396B8D1F14689E006F12C7 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035CA1F00FD02000C5FA5 /* MenuTableViewCell.swift */; };
+		E6396B8E1F14689E006F12C7 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D90F1EF3982700C91617 /* Dictionary.swift */; };
+		E6396B8F1F14689E006F12C7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035C61F00FCA7000C5FA5 /* MenuViewController.swift */; };
+		E6396B901F14689E006F12C7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E645D9501EF398DE00C91617 /* SWRevealViewController.m */; };
+		E6396B911F14689E006F12C7 /* ExportGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECF11F0F700900A216A3 /* ExportGroupViewController.swift */; };
+		E6396B921F14689E006F12C7 /* ExportGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECEF1F0F6E5000A216A3 /* ExportGroupView.swift */; };
+		E6396B931F14689E006F12C7 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9181EF3982700C91617 /* UIImageView.swift */; };
+		E6396B941F14689E006F12C7 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61BE2991F0A41E20062339D /* DatabaseHelper.swift */; };
+		E6396B951F14689E006F12C7 /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECE51F0F4C2D00A216A3 /* TrainingView.swift */; };
+		E6396B961F14689E006F12C7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BB5F21F0BAAED001AE835 /* HomeViewController.swift */; };
+		E6396B971F14689E006F12C7 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6377D811F021D7000023222 /* EmployeeTableViewCell.swift */; };
+		E6396B981F14689E006F12C7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61B8E251F0CA6DB00FC6034 /* ProfileViewController.swift */; };
+		E6396B991F14689E006F12C7 /* TrainingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECE91F0F4E6100A216A3 /* TrainingDetailView.swift */; };
+		E6396B9A1F14689E006F12C7 /* EmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6377D7F1F021D6300023222 /* EmployeeViewController.swift */; };
+		E6396B9B1F14689E006F12C7 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D8E91EF3981B00C91617 /* Global.swift */; };
+		E6396B9C1F14689E006F12C7 /* ChosenEmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECF71F0F7C3300A216A3 /* ChosenEmployeeTableViewCell.swift */; };
+		E6396B9E1F14689E006F12C7 /* Pods_Attendance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194D8078975417919BE82806 /* Pods_Attendance.framework */; };
+		E6396BA01F14689E006F12C7 /* person5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC47191F0F6E1100FBAE89 /* person5.jpg */; };
+		E6396BA11F14689E006F12C7 /* person3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC47171F0F6E1100FBAE89 /* person3.jpg */; };
+		E6396BA21F14689E006F12C7 /* OpenSans-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E645D93A1EF3983500C91617 /* OpenSans-bold.ttf */; };
+		E6396BA31F14689E006F12C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E645D8DA1EF3952D00C91617 /* LaunchScreen.storyboard */; };
+		E6396BA41F14689E006F12C7 /* OpenSans-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E645D93C1EF3983500C91617 /* OpenSans-semibold.ttf */; };
+		E6396BA51F14689E006F12C7 /* person4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC47181F0F6E1100FBAE89 /* person4.jpg */; };
+		E6396BA61F14689E006F12C7 /* person6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC471A1F0F6E1100FBAE89 /* person6.jpg */; };
+		E6396BA71F14689E006F12C7 /* OpenSans-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E645D93B1EF3983500C91617 /* OpenSans-light.ttf */; };
+		E6396BA81F14689E006F12C7 /* person7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC471B1F0F6E1100FBAE89 /* person7.jpg */; };
+		E6396BA91F14689E006F12C7 /* person2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC47161F0F6E1100FBAE89 /* person2.jpg */; };
+		E6396BAA1F14689E006F12C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E645D8D81EF3952D00C91617 /* Assets.xcassets */; };
+		E6396BAB1F14689E006F12C7 /* OpenSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E645D93D1EF3983500C91617 /* OpenSans.ttf */; };
+		E6396BAC1F14689E006F12C7 /* person1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC47151F0F6E1100FBAE89 /* person1.jpg */; };
+		E6396BAD1F14689E006F12C7 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC47131F0F6E1100FBAE89 /* haarcascade_frontalface_alt2.xml */; };
+		E6396BAE1F14689E006F12C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E61BE29B1F0A451A0062339D /* GoogleService-Info.plist */; };
+		E6396BAF1F14689E006F12C7 /* RealTime.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC472D1F0F6F7C00FBAE89 /* RealTime.storyboard */; };
+		E6396BB01F14689E006F12C7 /* haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0EEC47121F0F6E1100FBAE89 /* haarcascade_eye_tree_eyeglasses.xml */; };
+		E6396BB91F146E41006F12C7 /* Info-User.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6396BB81F146E41006F12C7 /* Info-User.plist */; };
+		E64247A01F1F9B3300C384D2 /* ImageUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E642479F1F1F9B3300C384D2 /* ImageUrl.swift */; };
+		E64247A21F1FB6CB00C384D2 /* EmployeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64247A11F1FB6CB00C384D2 /* EmployeHeaderView.swift */; };
+		E64247A41F1FBAAE00C384D2 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64247A31F1FBAAE00C384D2 /* PhotoCollectionViewCell.swift */; };
+		E645D8D21EF3952D00C91617 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D8D11EF3952D00C91617 /* AppDelegate.swift */; };
+		E645D8D91EF3952D00C91617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E645D8D81EF3952D00C91617 /* Assets.xcassets */; };
+		E645D8DC1EF3952D00C91617 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E645D8DA1EF3952D00C91617 /* LaunchScreen.storyboard */; };
+		E645D8F71EF3981B00C91617 /* CaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D8E81EF3981B00C91617 /* CaptureButton.swift */; };
+		E645D8F81EF3981B00C91617 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D8E91EF3981B00C91617 /* Global.swift */; };
+		E645D8FA1EF3981B00C91617 /* SizeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D8EB1EF3981B00C91617 /* SizeUtils.swift */; };
+		E645D8FC1EF3981B00C91617 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D8ED1EF3981B00C91617 /* Utils.swift */; };
+		E645D9251EF3982700C91617 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D90F1EF3982700C91617 /* Dictionary.swift */; };
+		E645D9261EF3982700C91617 /* NSArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9101EF3982700C91617 /* NSArray.swift */; };
+		E645D9271EF3982700C91617 /* NSData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9111EF3982700C91617 /* NSData.swift */; };
+		E645D9281EF3982700C91617 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9121EF3982700C91617 /* NSDate.swift */; };
+		E645D9291EF3982700C91617 /* NSDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9131EF3982700C91617 /* NSDictionary.swift */; };
+		E645D92A1EF3982700C91617 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9141EF3982700C91617 /* NSObject.swift */; };
+		E645D92B1EF3982700C91617 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9151EF3982700C91617 /* String.swift */; };
+		E645D92C1EF3982700C91617 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9161EF3982700C91617 /* UIColor.swift */; };
+		E645D92D1EF3982700C91617 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9171EF3982700C91617 /* UIImage.swift */; };
+		E645D92E1EF3982700C91617 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9181EF3982700C91617 /* UIImageView.swift */; };
+		E645D92F1EF3982700C91617 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9191EF3982700C91617 /* UITableView.swift */; };
+		E645D9301EF3982700C91617 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D91A1EF3982700C91617 /* UITextField.swift */; };
+		E645D9311EF3982700C91617 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D91B1EF3982700C91617 /* UIView.swift */; };
+		E645D9321EF3982700C91617 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D91C1EF3982700C91617 /* UIViewController.swift */; };
+		E645D93F1EF3983500C91617 /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9341EF3983500C91617 /* UserDefaultManager.swift */; };
+		E645D9421EF3983500C91617 /* OpenSans-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E645D93A1EF3983500C91617 /* OpenSans-bold.ttf */; };
+		E645D9431EF3983500C91617 /* OpenSans-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E645D93B1EF3983500C91617 /* OpenSans-light.ttf */; };
+		E645D9441EF3983500C91617 /* OpenSans-semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E645D93C1EF3983500C91617 /* OpenSans-semibold.ttf */; };
+		E645D9451EF3983500C91617 /* OpenSans.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E645D93D1EF3983500C91617 /* OpenSans.ttf */; };
+		E645D9591EF398DE00C91617 /* AIDatePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E645D94D1EF398DE00C91617 /* AIDatePickerController.m */; };
+		E645D95A1EF398DE00C91617 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E645D9501EF398DE00C91617 /* SWRevealViewController.m */; };
+		E645D95B1EF398DE00C91617 /* MTViewHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = E645D9541EF398DE00C91617 /* MTViewHighlighter.m */; };
+		E645D95C1EF398DE00C91617 /* MTCompoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E645D9561EF398DE00C91617 /* MTCompoundButton.m */; };
+		E645D95D1EF398DE00C91617 /* UIView+TouchHighlighting.m in Sources */ = {isa = PBXBuildFile; fileRef = E645D9581EF398DE00C91617 /* UIView+TouchHighlighting.m */; };
+		E645D95F1EF39B7100C91617 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D95E1EF39B7100C91617 /* MainViewController.swift */; };
+		E645D9611EF39B7D00C91617 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645D9601EF39B7D00C91617 /* MainView.swift */; };
+		E649B4881F1859050014E861 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649B4871F1859050014E861 /* CalendarView.swift */; };
+		E649B48A1F1859150014E861 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E649B4891F1859150014E861 /* CalendarViewController.swift */; };
+		E64BB5F31F0BAAED001AE835 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BB5F21F0BAAED001AE835 /* HomeViewController.swift */; };
+		E64BB5F51F0BAB9C001AE835 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BB5F41F0BAB9C001AE835 /* SettingViewController.swift */; };
+		E64BB5F71F0BB186001AE835 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BB5F61F0BB186001AE835 /* HomeView.swift */; };
+		E64C70381F09DB530040C71C /* EmployeeGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C70371F09DB530040C71C /* EmployeeGroupView.swift */; };
+		E64C703A1F09DB6B0040C71C /* EmployeeGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C70391F09DB6B0040C71C /* EmployeeGroupViewController.swift */; };
+		E64C703C1F09DB9F0040C71C /* EmployeeGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C703B1F09DB9F0040C71C /* EmployeeGroupTableViewCell.swift */; };
+		E64C703E1F09E3F70040C71C /* AddGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C703D1F09E3F70040C71C /* AddGroupView.swift */; };
+		E64C70401F09E5510040C71C /* AddGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C703F1F09E5510040C71C /* AddGroupViewController.swift */; };
+		E64CECDC1F0F2AD300A216A3 /* AttendanceDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECDB1F0F2AD300A216A3 /* AttendanceDate.swift */; };
+		E64CECE01F0F350A00A216A3 /* AttendanceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECDF1F0F350A00A216A3 /* AttendanceDetailView.swift */; };
+		E64CECE21F0F355A00A216A3 /* AttendanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECE11F0F355A00A216A3 /* AttendanceDetailViewController.swift */; };
+		E64CECE41F0F364900A216A3 /* AttendanceDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECE31F0F364900A216A3 /* AttendanceDetailTableViewCell.swift */; };
+		E64CECE61F0F4C2D00A216A3 /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECE51F0F4C2D00A216A3 /* TrainingView.swift */; };
+		E64CECE81F0F4C3D00A216A3 /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECE71F0F4C3D00A216A3 /* TrainingViewController.swift */; };
+		E64CECEA1F0F4E6100A216A3 /* TrainingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECE91F0F4E6100A216A3 /* TrainingDetailView.swift */; };
+		E64CECEC1F0F4E7600A216A3 /* TrainingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECEB1F0F4E7600A216A3 /* TrainingDetailViewController.swift */; };
+		E64CECEE1F0F4F9500A216A3 /* TrainingDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECED1F0F4F9500A216A3 /* TrainingDetailTableViewCell.swift */; };
+		E64CECF01F0F6E5000A216A3 /* ExportGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECEF1F0F6E5000A216A3 /* ExportGroupView.swift */; };
+		E64CECF21F0F700900A216A3 /* ExportGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECF11F0F700900A216A3 /* ExportGroupViewController.swift */; };
+		E64CECF41F0F732900A216A3 /* ExportEmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECF31F0F732900A216A3 /* ExportEmployeeView.swift */; };
+		E64CECF61F0F733900A216A3 /* ExportEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECF51F0F733900A216A3 /* ExportEmployeeViewController.swift */; };
+		E64CECF81F0F7C3300A216A3 /* ChosenEmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64CECF71F0F7C3300A216A3 /* ChosenEmployeeTableViewCell.swift */; };
+		E661F10C1F1735720087B05B /* ItemIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63588891F170B8D0073D3F9 /* ItemIntroView.swift */; };
+		E661F10D1F1735750087B05B /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63588871F170A6D0073D3F9 /* IntroView.swift */; };
+		E661F10E1F1735790087B05B /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63588851F170A4B0073D3F9 /* IntroViewController.swift */; };
+		E661F1101F1749330087B05B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E661F10F1F1749330087B05B /* GradientView.swift */; };
+		E661F1111F1749330087B05B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E661F10F1F1749330087B05B /* GradientView.swift */; };
+		E661F1131F175C1C0087B05B /* EmployeeGroupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E661F1121F175C1C0087B05B /* EmployeeGroupCollectionViewCell.swift */; };
+		E661F1141F175C1C0087B05B /* EmployeeGroupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E661F1121F175C1C0087B05B /* EmployeeGroupCollectionViewCell.swift */; };
+		E67035B91F009EF4000C5FA5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035B81F009EF4000C5FA5 /* LoginView.swift */; };
+		E67035BB1F00ADEF000C5FA5 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035BA1F00ADEF000C5FA5 /* RegisterView.swift */; };
+		E67035BD1F00ADFE000C5FA5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035BC1F00ADFE000C5FA5 /* LoginViewController.swift */; };
+		E67035BF1F00AE06000C5FA5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035BE1F00AE06000C5FA5 /* RegisterViewController.swift */; };
+		E67035C11F00C93C000C5FA5 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035C01F00C93C000C5FA5 /* ForgotPasswordView.swift */; };
+		E67035C31F00C956000C5FA5 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035C21F00C956000C5FA5 /* ForgotPasswordViewController.swift */; };
+		E67035C51F00FC70000C5FA5 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035C41F00FC70000C5FA5 /* MenuView.swift */; };
+		E67035C71F00FCA7000C5FA5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035C61F00FCA7000C5FA5 /* MenuViewController.swift */; };
+		E67035C91F00FCC4000C5FA5 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035C81F00FCC4000C5FA5 /* Menu.swift */; };
+		E67035CB1F00FD02000C5FA5 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035CA1F00FD02000C5FA5 /* MenuTableViewCell.swift */; };
+		E67035CD1F00FD15000C5FA5 /* MenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035CC1F00FD15000C5FA5 /* MenuHeaderView.swift */; };
+		E67035CF1F00FF73000C5FA5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67035CE1F00FF73000C5FA5 /* User.swift */; };
+		E6922BCD1F258CD4005D67A2 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6922BCC1F258CD4005D67A2 /* File.swift */; };
+		E6922BCE1F25966E005D67A2 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6922BCC1F258CD4005D67A2 /* File.swift */; };
+		E6C02F1A1F0639D900B003B7 /* AddEmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C02F191F0639D900B003B7 /* AddEmployeeView.swift */; };
+		E6C02F1C1F0639E700B003B7 /* AddEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C02F1B1F0639E700B003B7 /* AddEmployeeViewController.swift */; };
+		E6C02F1F1F06580100B003B7 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C02F1E1F06580100B003B7 /* CameraViewController.swift */; };
+		E6FD00BC1F18A43600912AFA /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD00BB1F18A43600912AFA /* GroupViewController.swift */; };
+		E6FD00BE1F18A44500912AFA /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD00BD1F18A44500912AFA /* GroupView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		060CA51C498ED46743B6706E /* Pods-AttendanceUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttendanceUser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AttendanceUser/Pods-AttendanceUser.debug.xcconfig"; sourceTree = "<group>"; };
+		0EEC47051F0F6DB700FBAE89 /* FaceRecognitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceRecognitionViewController.swift; sourceTree = "<group>"; };
+		0EEC47071F0F6DDC00FBAE89 /* RealTimeCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealTimeCameraViewController.swift; sourceTree = "<group>"; };
+		0EEC470E1F0F6E1100FBAE89 /* FJFaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJFaceDetector.h; sourceTree = "<group>"; };
+		0EEC470F1F0F6E1100FBAE89 /* FJFaceDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FJFaceDetector.mm; sourceTree = "<group>"; };
+		0EEC47101F0F6E1100FBAE89 /* FJFaceRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJFaceRecognizer.h; sourceTree = "<group>"; };
+		0EEC47111F0F6E1100FBAE89 /* FJFaceRecognizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FJFaceRecognizer.mm; sourceTree = "<group>"; };
+		0EEC47121F0F6E1100FBAE89 /* haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
+		0EEC47131F0F6E1100FBAE89 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		0EEC47151F0F6E1100FBAE89 /* person1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person1.jpg; sourceTree = "<group>"; };
+		0EEC47161F0F6E1100FBAE89 /* person2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person2.jpg; sourceTree = "<group>"; };
+		0EEC47171F0F6E1100FBAE89 /* person3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person3.jpg; sourceTree = "<group>"; };
+		0EEC47181F0F6E1100FBAE89 /* person4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person4.jpg; sourceTree = "<group>"; };
+		0EEC47191F0F6E1100FBAE89 /* person5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person5.jpg; sourceTree = "<group>"; };
+		0EEC471A1F0F6E1100FBAE89 /* person6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person6.jpg; sourceTree = "<group>"; };
+		0EEC471B1F0F6E1100FBAE89 /* person7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = person7.jpg; sourceTree = "<group>"; };
+		0EEC471C1F0F6E1100FBAE89 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		0EEC471D1F0F6E1100FBAE89 /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		0EEC472D1F0F6F7C00FBAE89 /* RealTime.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RealTime.storyboard; sourceTree = "<group>"; };
+		194D8078975417919BE82806 /* Pods_Attendance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attendance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0F7687815F0A00A144C27E /* Pods-Attendance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendance.release.xcconfig"; path = "Pods/Target Support Files/Pods-Attendance/Pods-Attendance.release.xcconfig"; sourceTree = "<group>"; };
+		6491BFC37276A799097FC53C /* Pods_AttendanceUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AttendanceUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A042DFAFFEAC0E77E3601C49 /* Pods-Attendance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attendance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Attendance/Pods-Attendance.debug.xcconfig"; sourceTree = "<group>"; };
+		B05E5E83269C3C7B9A892024 /* Pods-AttendanceUser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttendanceUser.release.xcconfig"; path = "Pods/Target Support Files/Pods-AttendanceUser/Pods-AttendanceUser.release.xcconfig"; sourceTree = "<group>"; };
+		E61B8E231F0CA56C00FC6034 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		E61B8E251F0CA6DB00FC6034 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E61B8E271F0CA6EC00FC6034 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E61B8E291F0CCAE800FC6034 /* ChangePasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
+		E61B8E2B1F0CCAF800FC6034 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		E61B8E2D1F0CDDCA00FC6034 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		E61BE2931F09FAEA0062339D /* AttendanceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceTableViewCell.swift; sourceTree = "<group>"; };
+		E61BE2951F0A35050062339D /* AttendanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceViewController.swift; sourceTree = "<group>"; };
+		E61BE2971F0A351E0062339D /* AttendanceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceView.swift; sourceTree = "<group>"; };
+		E61BE2991F0A41E20062339D /* DatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		E61BE29B1F0A451A0062339D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E61BE29D1F0A51320062339D /* SplashScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		E61BE29F1F0A513F0062339D /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		E62982431F0E3973006A22CB /* Attendance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attendance.swift; sourceTree = "<group>"; };
+		E62982451F0E3D98006A22CB /* AttendanceTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceTime.swift; sourceTree = "<group>"; };
+		E63588851F170A4B0073D3F9 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		E63588871F170A6D0073D3F9 /* IntroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		E63588891F170B8D0073D3F9 /* ItemIntroView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemIntroView.swift; sourceTree = "<group>"; };
+		E6377D7B1F021AFB00023222 /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		E6377D7D1F021D4900023222 /* EmployeeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeView.swift; sourceTree = "<group>"; };
+		E6377D7F1F021D6300023222 /* EmployeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeViewController.swift; sourceTree = "<group>"; };
+		E6377D811F021D7000023222 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
+		E6396BB61F14689E006F12C7 /* AttendanceUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttendanceUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6396BB81F146E41006F12C7 /* Info-User.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-User.plist"; sourceTree = "<group>"; };
+		E642479F1F1F9B3300C384D2 /* ImageUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUrl.swift; sourceTree = "<group>"; };
+		E64247A11F1FB6CB00C384D2 /* EmployeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeHeaderView.swift; sourceTree = "<group>"; };
+		E64247A31F1FBAAE00C384D2 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		E645D8CE1EF3952D00C91617 /* Attendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attendance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E645D8D11EF3952D00C91617 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E645D8D81EF3952D00C91617 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E645D8DB1EF3952D00C91617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E645D8DD1EF3952D00C91617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E645D8E81EF3981B00C91617 /* CaptureButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureButton.swift; sourceTree = "<group>"; };
+		E645D8E91EF3981B00C91617 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		E645D8EB1EF3981B00C91617 /* SizeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeUtils.swift; sourceTree = "<group>"; };
+		E645D8ED1EF3981B00C91617 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E645D90F1EF3982700C91617 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		E645D9101EF3982700C91617 /* NSArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSArray.swift; sourceTree = "<group>"; };
+		E645D9111EF3982700C91617 /* NSData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSData.swift; sourceTree = "<group>"; };
+		E645D9121EF3982700C91617 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
+		E645D9131EF3982700C91617 /* NSDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDictionary.swift; sourceTree = "<group>"; };
+		E645D9141EF3982700C91617 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		E645D9151EF3982700C91617 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		E645D9161EF3982700C91617 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		E645D9171EF3982700C91617 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		E645D9181EF3982700C91617 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		E645D9191EF3982700C91617 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		E645D91A1EF3982700C91617 /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		E645D91B1EF3982700C91617 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		E645D91C1EF3982700C91617 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		E645D9341EF3983500C91617 /* UserDefaultManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		E645D93A1EF3983500C91617 /* OpenSans-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-bold.ttf"; sourceTree = "<group>"; };
+		E645D93B1EF3983500C91617 /* OpenSans-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-light.ttf"; sourceTree = "<group>"; };
+		E645D93C1EF3983500C91617 /* OpenSans-semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-semibold.ttf"; sourceTree = "<group>"; };
+		E645D93D1EF3983500C91617 /* OpenSans.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OpenSans.ttf; sourceTree = "<group>"; };
+		E645D9461EF398CC00C91617 /* Attendance-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Attendance-Bridging-Header.h"; sourceTree = "<group>"; };
+		E645D94C1EF398DE00C91617 /* AIDatePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDatePickerController.h; sourceTree = "<group>"; };
+		E645D94D1EF398DE00C91617 /* AIDatePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIDatePickerController.m; sourceTree = "<group>"; };
+		E645D94F1EF398DE00C91617 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		E645D9501EF398DE00C91617 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		E645D9531EF398DE00C91617 /* MTViewHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTViewHighlighter.h; sourceTree = "<group>"; };
+		E645D9541EF398DE00C91617 /* MTViewHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTViewHighlighter.m; sourceTree = "<group>"; };
+		E645D9551EF398DE00C91617 /* MTCompoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCompoundButton.h; sourceTree = "<group>"; };
+		E645D9561EF398DE00C91617 /* MTCompoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCompoundButton.m; sourceTree = "<group>"; };
+		E645D9571EF398DE00C91617 /* UIView+TouchHighlighting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TouchHighlighting.h"; sourceTree = "<group>"; };
+		E645D9581EF398DE00C91617 /* UIView+TouchHighlighting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TouchHighlighting.m"; sourceTree = "<group>"; };
+		E645D95E1EF39B7100C91617 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E645D9601EF39B7D00C91617 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E649B4871F1859050014E861 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		E649B4891F1859150014E861 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		E64BB5F21F0BAAED001AE835 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E64BB5F41F0BAB9C001AE835 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		E64BB5F61F0BB186001AE835 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E64C70371F09DB530040C71C /* EmployeeGroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeGroupView.swift; sourceTree = "<group>"; };
+		E64C70391F09DB6B0040C71C /* EmployeeGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeGroupViewController.swift; sourceTree = "<group>"; };
+		E64C703B1F09DB9F0040C71C /* EmployeeGroupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeGroupTableViewCell.swift; sourceTree = "<group>"; };
+		E64C703D1F09E3F70040C71C /* AddGroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGroupView.swift; sourceTree = "<group>"; };
+		E64C703F1F09E5510040C71C /* AddGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGroupViewController.swift; sourceTree = "<group>"; };
+		E64CECDB1F0F2AD300A216A3 /* AttendanceDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceDate.swift; sourceTree = "<group>"; };
+		E64CECDF1F0F350A00A216A3 /* AttendanceDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceDetailView.swift; sourceTree = "<group>"; };
+		E64CECE11F0F355A00A216A3 /* AttendanceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceDetailViewController.swift; sourceTree = "<group>"; };
+		E64CECE31F0F364900A216A3 /* AttendanceDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceDetailTableViewCell.swift; sourceTree = "<group>"; };
+		E64CECE51F0F4C2D00A216A3 /* TrainingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
+		E64CECE71F0F4C3D00A216A3 /* TrainingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
+		E64CECE91F0F4E6100A216A3 /* TrainingDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingDetailView.swift; sourceTree = "<group>"; };
+		E64CECEB1F0F4E7600A216A3 /* TrainingDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingDetailViewController.swift; sourceTree = "<group>"; };
+		E64CECED1F0F4F9500A216A3 /* TrainingDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingDetailTableViewCell.swift; sourceTree = "<group>"; };
+		E64CECEF1F0F6E5000A216A3 /* ExportGroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportGroupView.swift; sourceTree = "<group>"; };
+		E64CECF11F0F700900A216A3 /* ExportGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportGroupViewController.swift; sourceTree = "<group>"; };
+		E64CECF31F0F732900A216A3 /* ExportEmployeeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportEmployeeView.swift; sourceTree = "<group>"; };
+		E64CECF51F0F733900A216A3 /* ExportEmployeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportEmployeeViewController.swift; sourceTree = "<group>"; };
+		E64CECF71F0F7C3300A216A3 /* ChosenEmployeeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChosenEmployeeTableViewCell.swift; sourceTree = "<group>"; };
+		E661F10F1F1749330087B05B /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		E661F1121F175C1C0087B05B /* EmployeeGroupCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeGroupCollectionViewCell.swift; sourceTree = "<group>"; };
+		E67035B81F009EF4000C5FA5 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E67035BA1F00ADEF000C5FA5 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		E67035BC1F00ADFE000C5FA5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E67035BE1F00AE06000C5FA5 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E67035C01F00C93C000C5FA5 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		E67035C21F00C956000C5FA5 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		E67035C41F00FC70000C5FA5 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		E67035C61F00FCA7000C5FA5 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E67035C81F00FCC4000C5FA5 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		E67035CA1F00FD02000C5FA5 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		E67035CC1F00FD15000C5FA5 /* MenuHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuHeaderView.swift; sourceTree = "<group>"; };
+		E67035CE1F00FF73000C5FA5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E6922BCC1F258CD4005D67A2 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		E6C02F191F0639D900B003B7 /* AddEmployeeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEmployeeView.swift; sourceTree = "<group>"; };
+		E6C02F1B1F0639E700B003B7 /* AddEmployeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewController.swift; sourceTree = "<group>"; };
+		E6C02F1E1F06580100B003B7 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		E6FD00BB1F18A43600912AFA /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		E6FD00BD1F18A44500912AFA /* GroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6396B9D1F14689E006F12C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6396B9E1F14689E006F12C7 /* Pods_Attendance.framework in Frameworks */,
+				760167DDD197E4405CC3FC12 /* Pods_AttendanceUser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E645D8CB1EF3952D00C91617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA27BCA8936DE0739A462AC4 /* Pods_Attendance.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EEC47091F0F6E1100FBAE89 /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				0EEC470E1F0F6E1100FBAE89 /* FJFaceDetector.h */,
+				0EEC470F1F0F6E1100FBAE89 /* FJFaceDetector.mm */,
+				0EEC47101F0F6E1100FBAE89 /* FJFaceRecognizer.h */,
+				0EEC47111F0F6E1100FBAE89 /* FJFaceRecognizer.mm */,
+				0EEC47121F0F6E1100FBAE89 /* haarcascade_eye_tree_eyeglasses.xml */,
+				0EEC47131F0F6E1100FBAE89 /* haarcascade_frontalface_alt2.xml */,
+				0EEC47141F0F6E1100FBAE89 /* Person */,
+				0EEC471C1F0F6E1100FBAE89 /* UIImage+OpenCV.h */,
+				0EEC471D1F0F6E1100FBAE89 /* UIImage+OpenCV.mm */,
+			);
+			path = OpenCV;
+			sourceTree = "<group>";
+		};
+		0EEC47141F0F6E1100FBAE89 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				0EEC47151F0F6E1100FBAE89 /* person1.jpg */,
+				0EEC47161F0F6E1100FBAE89 /* person2.jpg */,
+				0EEC47171F0F6E1100FBAE89 /* person3.jpg */,
+				0EEC47181F0F6E1100FBAE89 /* person4.jpg */,
+				0EEC47191F0F6E1100FBAE89 /* person5.jpg */,
+				0EEC471A1F0F6E1100FBAE89 /* person6.jpg */,
+				0EEC471B1F0F6E1100FBAE89 /* person7.jpg */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		0EEC472C1F0F6F3F00FBAE89 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0EEC472D1F0F6F7C00FBAE89 /* RealTime.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4D162527C4045C5B80909324 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A042DFAFFEAC0E77E3601C49 /* Pods-Attendance.debug.xcconfig */,
+				5C0F7687815F0A00A144C27E /* Pods-Attendance.release.xcconfig */,
+				060CA51C498ED46743B6706E /* Pods-AttendanceUser.debug.xcconfig */,
+				B05E5E83269C3C7B9A892024 /* Pods-AttendanceUser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD854013071DDA824890FD7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				194D8078975417919BE82806 /* Pods_Attendance.framework */,
+				6491BFC37276A799097FC53C /* Pods_AttendanceUser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E645D8C51EF3952D00C91617 = {
+			isa = PBXGroup;
+			children = (
+				E645D8D01EF3952D00C91617 /* Attendance */,
+				E645D8CF1EF3952D00C91617 /* Products */,
+				4D162527C4045C5B80909324 /* Pods */,
+				AD854013071DDA824890FD7D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E645D8CF1EF3952D00C91617 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E645D8CE1EF3952D00C91617 /* Attendance.app */,
+				E6396BB61F14689E006F12C7 /* AttendanceUser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E645D8D01EF3952D00C91617 /* Attendance */ = {
+			isa = PBXGroup;
+			children = (
+				E645D94A1EF398DE00C91617 /* Libraries */,
+				E645D90E1EF3982700C91617 /* Extension */,
+				E645D8E71EF3981B00C91617 /* Utils */,
+				E645D9351EF3983500C91617 /* Models */,
+				E645D9331EF3983500C91617 /* Manager */,
+				E645D8EE1EF3981B00C91617 /* Views */,
+				E645D9051EF3982700C91617 /* Controllers */,
+				0EEC472C1F0F6F3F00FBAE89 /* Storyboards */,
+				E645D9381EF3983500C91617 /* Resources */,
+				E645D8D11EF3952D00C91617 /* AppDelegate.swift */,
+				E645D8D81EF3952D00C91617 /* Assets.xcassets */,
+				E645D8DA1EF3952D00C91617 /* LaunchScreen.storyboard */,
+				E645D8DD1EF3952D00C91617 /* Info.plist */,
+				E6396BB81F146E41006F12C7 /* Info-User.plist */,
+				E61BE29B1F0A451A0062339D /* GoogleService-Info.plist */,
+				E645D9461EF398CC00C91617 /* Attendance-Bridging-Header.h */,
+			);
+			path = Attendance;
+			sourceTree = "<group>";
+		};
+		E645D8E71EF3981B00C91617 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E661F10F1F1749330087B05B /* GradientView.swift */,
+				E645D8E81EF3981B00C91617 /* CaptureButton.swift */,
+				E645D8E91EF3981B00C91617 /* Global.swift */,
+				E645D8EB1EF3981B00C91617 /* SizeUtils.swift */,
+				E645D8ED1EF3981B00C91617 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E645D8EE1EF3981B00C91617 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E645D9601EF39B7D00C91617 /* MainView.swift */,
+				E67035B81F009EF4000C5FA5 /* LoginView.swift */,
+				E67035BA1F00ADEF000C5FA5 /* RegisterView.swift */,
+				E67035C01F00C93C000C5FA5 /* ForgotPasswordView.swift */,
+				E67035C41F00FC70000C5FA5 /* MenuView.swift */,
+				E67035CA1F00FD02000C5FA5 /* MenuTableViewCell.swift */,
+				E67035CC1F00FD15000C5FA5 /* MenuHeaderView.swift */,
+				E64BB5F61F0BB186001AE835 /* HomeView.swift */,
+				E64C70371F09DB530040C71C /* EmployeeGroupView.swift */,
+				E64C703B1F09DB9F0040C71C /* EmployeeGroupTableViewCell.swift */,
+				E661F1121F175C1C0087B05B /* EmployeeGroupCollectionViewCell.swift */,
+				E64C703D1F09E3F70040C71C /* AddGroupView.swift */,
+				E6377D7D1F021D4900023222 /* EmployeeView.swift */,
+				E6377D811F021D7000023222 /* EmployeeTableViewCell.swift */,
+				E64247A31F1FBAAE00C384D2 /* PhotoCollectionViewCell.swift */,
+				E64247A11F1FB6CB00C384D2 /* EmployeHeaderView.swift */,
+				E6C02F191F0639D900B003B7 /* AddEmployeeView.swift */,
+				E61BE2931F09FAEA0062339D /* AttendanceTableViewCell.swift */,
+				E61BE2971F0A351E0062339D /* AttendanceView.swift */,
+				E61BE29D1F0A51320062339D /* SplashScreenView.swift */,
+				E61B8E231F0CA56C00FC6034 /* SettingView.swift */,
+				E61B8E271F0CA6EC00FC6034 /* ProfileView.swift */,
+				E61B8E291F0CCAE800FC6034 /* ChangePasswordView.swift */,
+				E64CECDF1F0F350A00A216A3 /* AttendanceDetailView.swift */,
+				E64CECE31F0F364900A216A3 /* AttendanceDetailTableViewCell.swift */,
+				E64CECE51F0F4C2D00A216A3 /* TrainingView.swift */,
+				E64CECE91F0F4E6100A216A3 /* TrainingDetailView.swift */,
+				E64CECED1F0F4F9500A216A3 /* TrainingDetailTableViewCell.swift */,
+				E64CECEF1F0F6E5000A216A3 /* ExportGroupView.swift */,
+				E64CECF31F0F732900A216A3 /* ExportEmployeeView.swift */,
+				E64CECF71F0F7C3300A216A3 /* ChosenEmployeeTableViewCell.swift */,
+				E63588871F170A6D0073D3F9 /* IntroView.swift */,
+				E63588891F170B8D0073D3F9 /* ItemIntroView.swift */,
+				E649B4871F1859050014E861 /* CalendarView.swift */,
+				E6FD00BD1F18A44500912AFA /* GroupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E645D9051EF3982700C91617 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E6C02F1D1F0657FA00B003B7 /* Utils */,
+				E645D95E1EF39B7100C91617 /* MainViewController.swift */,
+				0EEC47071F0F6DDC00FBAE89 /* RealTimeCameraViewController.swift */,
+				0EEC47051F0F6DB700FBAE89 /* FaceRecognitionViewController.swift */,
+				E64BB5F21F0BAAED001AE835 /* HomeViewController.swift */,
+				E61BE2951F0A35050062339D /* AttendanceViewController.swift */,
+				E67035BC1F00ADFE000C5FA5 /* LoginViewController.swift */,
+				E67035BE1F00AE06000C5FA5 /* RegisterViewController.swift */,
+				E67035C21F00C956000C5FA5 /* ForgotPasswordViewController.swift */,
+				E67035C61F00FCA7000C5FA5 /* MenuViewController.swift */,
+				E64C70391F09DB6B0040C71C /* EmployeeGroupViewController.swift */,
+				E64C703F1F09E5510040C71C /* AddGroupViewController.swift */,
+				E6377D7F1F021D6300023222 /* EmployeeViewController.swift */,
+				E6C02F1B1F0639E700B003B7 /* AddEmployeeViewController.swift */,
+				E61BE29F1F0A513F0062339D /* SplashScreenViewController.swift */,
+				E64BB5F41F0BAB9C001AE835 /* SettingViewController.swift */,
+				E61B8E251F0CA6DB00FC6034 /* ProfileViewController.swift */,
+				E61B8E2B1F0CCAF800FC6034 /* ChangePasswordViewController.swift */,
+				E64CECE11F0F355A00A216A3 /* AttendanceDetailViewController.swift */,
+				E64CECE71F0F4C3D00A216A3 /* TrainingViewController.swift */,
+				E64CECEB1F0F4E7600A216A3 /* TrainingDetailViewController.swift */,
+				E64CECF11F0F700900A216A3 /* ExportGroupViewController.swift */,
+				E64CECF51F0F733900A216A3 /* ExportEmployeeViewController.swift */,
+				E63588851F170A4B0073D3F9 /* IntroViewController.swift */,
+				E649B4891F1859150014E861 /* CalendarViewController.swift */,
+				E6FD00BB1F18A43600912AFA /* GroupViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E645D90E1EF3982700C91617 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E645D90F1EF3982700C91617 /* Dictionary.swift */,
+				E645D9101EF3982700C91617 /* NSArray.swift */,
+				E645D9111EF3982700C91617 /* NSData.swift */,
+				E645D9121EF3982700C91617 /* NSDate.swift */,
+				E645D9131EF3982700C91617 /* NSDictionary.swift */,
+				E645D9141EF3982700C91617 /* NSObject.swift */,
+				E645D9151EF3982700C91617 /* String.swift */,
+				E645D9161EF3982700C91617 /* UIColor.swift */,
+				E645D9171EF3982700C91617 /* UIImage.swift */,
+				E645D9181EF3982700C91617 /* UIImageView.swift */,
+				E645D9191EF3982700C91617 /* UITableView.swift */,
+				E645D91A1EF3982700C91617 /* UITextField.swift */,
+				E645D91B1EF3982700C91617 /* UIView.swift */,
+				E645D91C1EF3982700C91617 /* UIViewController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E645D9331EF3983500C91617 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E645D9341EF3983500C91617 /* UserDefaultManager.swift */,
+				E61BE2991F0A41E20062339D /* DatabaseHelper.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E645D9351EF3983500C91617 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E67035C81F00FCC4000C5FA5 /* Menu.swift */,
+				E67035CE1F00FF73000C5FA5 /* User.swift */,
+				E6377D7B1F021AFB00023222 /* Employee.swift */,
+				E61B8E2D1F0CDDCA00FC6034 /* Group.swift */,
+				E64CECDB1F0F2AD300A216A3 /* AttendanceDate.swift */,
+				E62982431F0E3973006A22CB /* Attendance.swift */,
+				E62982451F0E3D98006A22CB /* AttendanceTime.swift */,
+				E642479F1F1F9B3300C384D2 /* ImageUrl.swift */,
+				E6922BCC1F258CD4005D67A2 /* File.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E645D9381EF3983500C91617 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E645D9391EF3983500C91617 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E645D9391EF3983500C91617 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E645D93A1EF3983500C91617 /* OpenSans-bold.ttf */,
+				E645D93B1EF3983500C91617 /* OpenSans-light.ttf */,
+				E645D93C1EF3983500C91617 /* OpenSans-semibold.ttf */,
+				E645D93D1EF3983500C91617 /* OpenSans.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E645D94A1EF398DE00C91617 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				0EEC47091F0F6E1100FBAE89 /* OpenCV */,
+				E645D94B1EF398DE00C91617 /* AIDatePickerController */,
+				E645D94E1EF398DE00C91617 /* SWRevealViewController */,
+				E645D9511EF398DE00C91617 /* UIView+TouchHighlighting */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		E645D94B1EF398DE00C91617 /* AIDatePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				E645D94C1EF398DE00C91617 /* AIDatePickerController.h */,
+				E645D94D1EF398DE00C91617 /* AIDatePickerController.m */,
+			);
+			path = AIDatePickerController;
+			sourceTree = "<group>";
+		};
+		E645D94E1EF398DE00C91617 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E645D94F1EF398DE00C91617 /* SWRevealViewController.h */,
+				E645D9501EF398DE00C91617 /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		E645D9511EF398DE00C91617 /* UIView+TouchHighlighting */ = {
+			isa = PBXGroup;
+			children = (
+				E645D9521EF398DE00C91617 /* Internal */,
+				E645D9551EF398DE00C91617 /* MTCompoundButton.h */,
+				E645D9561EF398DE00C91617 /* MTCompoundButton.m */,
+				E645D9571EF398DE00C91617 /* UIView+TouchHighlighting.h */,
+				E645D9581EF398DE00C91617 /* UIView+TouchHighlighting.m */,
+			);
+			path = "UIView+TouchHighlighting";
+			sourceTree = "<group>";
+		};
+		E645D9521EF398DE00C91617 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				E645D9531EF398DE00C91617 /* MTViewHighlighter.h */,
+				E645D9541EF398DE00C91617 /* MTViewHighlighter.m */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		E6C02F1D1F0657FA00B003B7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E6C02F1E1F06580100B003B7 /* CameraViewController.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6396B431F14689E006F12C7 /* AttendanceUser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6396BB31F14689E006F12C7 /* Build configuration list for PBXNativeTarget "AttendanceUser" */;
+			buildPhases = (
+				E6396B441F14689E006F12C7 /* [CP] Check Pods Manifest.lock */,
+				E6396B451F14689E006F12C7 /* Sources */,
+				E6396B9D1F14689E006F12C7 /* Frameworks */,
+				E6396B9F1F14689E006F12C7 /* Resources */,
+				E6396BB11F14689E006F12C7 /* [CP] Embed Pods Frameworks */,
+				E6396BB21F14689E006F12C7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AttendanceUser;
+			productName = Attendance;
+			productReference = E6396BB61F14689E006F12C7 /* AttendanceUser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E645D8CD1EF3952D00C91617 /* Attendance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E645D8E01EF3952D00C91617 /* Build configuration list for PBXNativeTarget "Attendance" */;
+			buildPhases = (
+				2ABC73CF6A3C3E01AAA71C49 /* [CP] Check Pods Manifest.lock */,
+				E645D8CA1EF3952D00C91617 /* Sources */,
+				E645D8CB1EF3952D00C91617 /* Frameworks */,
+				E645D8CC1EF3952D00C91617 /* Resources */,
+				09A78229D9FB21867F7A6182 /* [CP] Embed Pods Frameworks */,
+				3AB5A14DCA0CC85883C508BE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Attendance;
+			productName = Attendance;
+			productReference = E645D8CE1EF3952D00C91617 /* Attendance.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E645D8C61EF3952D00C91617 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = citynow;
+				TargetAttributes = {
+					E645D8CD1EF3952D00C91617 = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E645D8C91EF3952D00C91617 /* Build configuration list for PBXProject "Attendance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E645D8C51EF3952D00C91617;
+			productRefGroup = E645D8CF1EF3952D00C91617 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E645D8CD1EF3952D00C91617 /* Attendance */,
+				E6396B431F14689E006F12C7 /* AttendanceUser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6396B9F1F14689E006F12C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6396BA01F14689E006F12C7 /* person5.jpg in Resources */,
+				E6396BA11F14689E006F12C7 /* person3.jpg in Resources */,
+				E6396BA21F14689E006F12C7 /* OpenSans-bold.ttf in Resources */,
+				E6396BA31F14689E006F12C7 /* LaunchScreen.storyboard in Resources */,
+				E6396BA41F14689E006F12C7 /* OpenSans-semibold.ttf in Resources */,
+				E6396BA51F14689E006F12C7 /* person4.jpg in Resources */,
+				E6396BA61F14689E006F12C7 /* person6.jpg in Resources */,
+				E6396BA71F14689E006F12C7 /* OpenSans-light.ttf in Resources */,
+				E6396BA81F14689E006F12C7 /* person7.jpg in Resources */,
+				E6396BA91F14689E006F12C7 /* person2.jpg in Resources */,
+				E6396BAA1F14689E006F12C7 /* Assets.xcassets in Resources */,
+				E6396BAB1F14689E006F12C7 /* OpenSans.ttf in Resources */,
+				E6396BAC1F14689E006F12C7 /* person1.jpg in Resources */,
+				E6396BAD1F14689E006F12C7 /* haarcascade_frontalface_alt2.xml in Resources */,
+				E6396BAE1F14689E006F12C7 /* GoogleService-Info.plist in Resources */,
+				E6396BAF1F14689E006F12C7 /* RealTime.storyboard in Resources */,
+				E6396BB01F14689E006F12C7 /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E645D8CC1EF3952D00C91617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EEC47281F0F6E1100FBAE89 /* person5.jpg in Resources */,
+				0EEC47261F0F6E1100FBAE89 /* person3.jpg in Resources */,
+				E645D9421EF3983500C91617 /* OpenSans-bold.ttf in Resources */,
+				E6396BB91F146E41006F12C7 /* Info-User.plist in Resources */,
+				E645D8DC1EF3952D00C91617 /* LaunchScreen.storyboard in Resources */,
+				E645D9441EF3983500C91617 /* OpenSans-semibold.ttf in Resources */,
+				0EEC47271F0F6E1100FBAE89 /* person4.jpg in Resources */,
+				0EEC47291F0F6E1100FBAE89 /* person6.jpg in Resources */,
+				E645D9431EF3983500C91617 /* OpenSans-light.ttf in Resources */,
+				0EEC472A1F0F6E1100FBAE89 /* person7.jpg in Resources */,
+				0EEC47251F0F6E1100FBAE89 /* person2.jpg in Resources */,
+				E645D8D91EF3952D00C91617 /* Assets.xcassets in Resources */,
+				E645D9451EF3983500C91617 /* OpenSans.ttf in Resources */,
+				0EEC47241F0F6E1100FBAE89 /* person1.jpg in Resources */,
+				0EEC47231F0F6E1100FBAE89 /* haarcascade_frontalface_alt2.xml in Resources */,
+				E61BE29C1F0A451A0062339D /* GoogleService-Info.plist in Resources */,
+				0EEC472E1F0F6F7C00FBAE89 /* RealTime.storyboard in Resources */,
+				0EEC47221F0F6E1100FBAE89 /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09A78229D9FB21867F7A6182 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Attendance/Pods-Attendance-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesomeKit/FontAwesomeKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/INSPhotoGallery/INSPhotoGallery.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/STPopup/STPopup.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftOverlays/SwiftOverlays.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesomeKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/INSPhotoGallery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/STPopup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftOverlays.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Attendance/Pods-Attendance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2ABC73CF6A3C3E01AAA71C49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Attendance-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3AB5A14DCA0CC85883C508BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Attendance/Pods-Attendance-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6396B441F14689E006F12C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Attendance-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6396BB11F14689E006F12C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Attendance/Pods-Attendance-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesomeKit/FontAwesomeKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/INSPhotoGallery/INSPhotoGallery.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/STPopup/STPopup.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftOverlays/SwiftOverlays.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesomeKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/INSPhotoGallery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/STPopup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftOverlays.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Attendance/Pods-Attendance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6396BB21F14689E006F12C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Attendance/Pods-Attendance-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6396B451F14689E006F12C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E622B5421F204DFF00D26C00 /* GroupViewController.swift in Sources */,
+				E6396B461F14689E006F12C7 /* EmployeeGroupView.swift in Sources */,
+				E622B5441F204E2600D26C00 /* GroupView.swift in Sources */,
+				E6396B471F14689E006F12C7 /* AttendanceTableViewCell.swift in Sources */,
+				E6396B481F14689E006F12C7 /* AttendanceDetailTableViewCell.swift in Sources */,
+				E6396B491F14689E006F12C7 /* UIView+TouchHighlighting.m in Sources */,
+				E6396B4A1F14689E006F12C7 /* UIImage+OpenCV.mm in Sources */,
+				E622B5401F204DD000D26C00 /* PhotoCollectionViewCell.swift in Sources */,
+				E6396B4B1F14689E006F12C7 /* MainViewController.swift in Sources */,
+				E6396B4C1F14689E006F12C7 /* FaceRecognitionViewController.swift in Sources */,
+				E6396B4D1F14689E006F12C7 /* ForgotPasswordViewController.swift in Sources */,
+				E6396B4E1F14689E006F12C7 /* CameraViewController.swift in Sources */,
+				E661F10D1F1735750087B05B /* IntroView.swift in Sources */,
+				E6396B4F1F14689E006F12C7 /* NSData.swift in Sources */,
+				E6396B501F14689E006F12C7 /* NSArray.swift in Sources */,
+				E6396B511F14689E006F12C7 /* NSObject.swift in Sources */,
+				E6396B521F14689E006F12C7 /* Menu.swift in Sources */,
+				E6396B531F14689E006F12C7 /* HomeView.swift in Sources */,
+				E6396B541F14689E006F12C7 /* NSDate.swift in Sources */,
+				E6396B551F14689E006F12C7 /* SplashScreenView.swift in Sources */,
+				E6396B561F14689E006F12C7 /* AddEmployeeView.swift in Sources */,
+				E6396B571F14689E006F12C7 /* FJFaceDetector.mm in Sources */,
+				E6396B581F14689E006F12C7 /* MenuView.swift in Sources */,
+				E6396B591F14689E006F12C7 /* ExportEmployeeViewController.swift in Sources */,
+				E6396B5A1F14689E006F12C7 /* TrainingViewController.swift in Sources */,
+				E6396B5B1F14689E006F12C7 /* CaptureButton.swift in Sources */,
+				E6396B5C1F14689E006F12C7 /* TrainingDetailTableViewCell.swift in Sources */,
+				E6396B5D1F14689E006F12C7 /* AttendanceView.swift in Sources */,
+				E6396B5E1F14689E006F12C7 /* SplashScreenViewController.swift in Sources */,
+				E6396B5F1F14689E006F12C7 /* RealTimeCameraViewController.swift in Sources */,
+				E6396B601F14689E006F12C7 /* UIImage.swift in Sources */,
+				E6396B611F14689E006F12C7 /* RegisterView.swift in Sources */,
+				E6396B621F14689E006F12C7 /* UITableView.swift in Sources */,
+				E622B5431F204E2300D26C00 /* CalendarView.swift in Sources */,
+				E6396B631F14689E006F12C7 /* AddGroupView.swift in Sources */,
+				E6396B641F14689E006F12C7 /* SizeUtils.swift in Sources */,
+				E6396B651F14689E006F12C7 /* ProfileView.swift in Sources */,
+				E6396B661F14689E006F12C7 /* AttendanceDetailView.swift in Sources */,
+				E6396B671F14689E006F12C7 /* MenuHeaderView.swift in Sources */,
+				E6396B681F14689E006F12C7 /* AddGroupViewController.swift in Sources */,
+				E6396B691F14689E006F12C7 /* UIViewController.swift in Sources */,
+				E6396B6A1F14689E006F12C7 /* AttendanceViewController.swift in Sources */,
+				E6396B6B1F14689E006F12C7 /* UserDefaultManager.swift in Sources */,
+				E6396B6C1F14689E006F12C7 /* String.swift in Sources */,
+				E6396B6D1F14689E006F12C7 /* UIView.swift in Sources */,
+				E6396B6E1F14689E006F12C7 /* ChangePasswordView.swift in Sources */,
+				E6396B6F1F14689E006F12C7 /* Group.swift in Sources */,
+				E6396B701F14689E006F12C7 /* Attendance.swift in Sources */,
+				E6396B711F14689E006F12C7 /* ChangePasswordViewController.swift in Sources */,
+				E661F10E1F1735790087B05B /* IntroViewController.swift in Sources */,
+				E6396B721F14689E006F12C7 /* AttendanceDate.swift in Sources */,
+				E6396B731F14689E006F12C7 /* UITextField.swift in Sources */,
+				E6396B741F14689E006F12C7 /* AppDelegate.swift in Sources */,
+				E6396B751F14689E006F12C7 /* AttendanceTime.swift in Sources */,
+				E6396B761F14689E006F12C7 /* EmployeeGroupViewController.swift in Sources */,
+				E6396B771F14689E006F12C7 /* Utils.swift in Sources */,
+				E6396B781F14689E006F12C7 /* SettingView.swift in Sources */,
+				E6396B791F14689E006F12C7 /* EmployeeView.swift in Sources */,
+				E6396B7A1F14689E006F12C7 /* SettingViewController.swift in Sources */,
+				E6396B7B1F14689E006F12C7 /* ExportEmployeeView.swift in Sources */,
+				E6396B7C1F14689E006F12C7 /* AddEmployeeViewController.swift in Sources */,
+				E622B53F1F204DB500D26C00 /* ImageUrl.swift in Sources */,
+				E6396B7D1F14689E006F12C7 /* ForgotPasswordView.swift in Sources */,
+				E6396B7E1F14689E006F12C7 /* FJFaceRecognizer.mm in Sources */,
+				E6396B7F1F14689E006F12C7 /* LoginViewController.swift in Sources */,
+				E6396B801F14689E006F12C7 /* MTCompoundButton.m in Sources */,
+				E6396B811F14689E006F12C7 /* AIDatePickerController.m in Sources */,
+				E6396B821F14689E006F12C7 /* User.swift in Sources */,
+				E6396B831F14689E006F12C7 /* RegisterViewController.swift in Sources */,
+				E622B5451F204E6600D26C00 /* CalendarViewController.swift in Sources */,
+				E661F1141F175C1C0087B05B /* EmployeeGroupCollectionViewCell.swift in Sources */,
+				E6396B841F14689E006F12C7 /* MainView.swift in Sources */,
+				E6396B851F14689E006F12C7 /* TrainingDetailViewController.swift in Sources */,
+				E6396B861F14689E006F12C7 /* EmployeeGroupTableViewCell.swift in Sources */,
+				E6396B871F14689E006F12C7 /* NSDictionary.swift in Sources */,
+				E6396B881F14689E006F12C7 /* AttendanceDetailViewController.swift in Sources */,
+				E6396B891F14689E006F12C7 /* MTViewHighlighter.m in Sources */,
+				E6922BCE1F25966E005D67A2 /* File.swift in Sources */,
+				E661F10C1F1735720087B05B /* ItemIntroView.swift in Sources */,
+				E6396B8A1F14689E006F12C7 /* LoginView.swift in Sources */,
+				E6396B8B1F14689E006F12C7 /* UIColor.swift in Sources */,
+				E6396B8C1F14689E006F12C7 /* Employee.swift in Sources */,
+				E6396B8D1F14689E006F12C7 /* MenuTableViewCell.swift in Sources */,
+				E6396B8E1F14689E006F12C7 /* Dictionary.swift in Sources */,
+				E6396B8F1F14689E006F12C7 /* MenuViewController.swift in Sources */,
+				E622B5411F204DD300D26C00 /* EmployeHeaderView.swift in Sources */,
+				E6396B901F14689E006F12C7 /* SWRevealViewController.m in Sources */,
+				E6396B911F14689E006F12C7 /* ExportGroupViewController.swift in Sources */,
+				E6396B921F14689E006F12C7 /* ExportGroupView.swift in Sources */,
+				E6396B931F14689E006F12C7 /* UIImageView.swift in Sources */,
+				E6396B941F14689E006F12C7 /* DatabaseHelper.swift in Sources */,
+				E6396B951F14689E006F12C7 /* TrainingView.swift in Sources */,
+				E6396B961F14689E006F12C7 /* HomeViewController.swift in Sources */,
+				E6396B971F14689E006F12C7 /* EmployeeTableViewCell.swift in Sources */,
+				E6396B981F14689E006F12C7 /* ProfileViewController.swift in Sources */,
+				E6396B991F14689E006F12C7 /* TrainingDetailView.swift in Sources */,
+				E6396B9A1F14689E006F12C7 /* EmployeeViewController.swift in Sources */,
+				E661F1111F1749330087B05B /* GradientView.swift in Sources */,
+				E6396B9B1F14689E006F12C7 /* Global.swift in Sources */,
+				E6396B9C1F14689E006F12C7 /* ChosenEmployeeTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E645D8CA1EF3952D00C91617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64C70381F09DB530040C71C /* EmployeeGroupView.swift in Sources */,
+				E61BE2941F09FAEA0062339D /* AttendanceTableViewCell.swift in Sources */,
+				E64CECE41F0F364900A216A3 /* AttendanceDetailTableViewCell.swift in Sources */,
+				E645D95D1EF398DE00C91617 /* UIView+TouchHighlighting.m in Sources */,
+				0EEC472B1F0F6E1100FBAE89 /* UIImage+OpenCV.mm in Sources */,
+				E645D95F1EF39B7100C91617 /* MainViewController.swift in Sources */,
+				0EEC47061F0F6DB800FBAE89 /* FaceRecognitionViewController.swift in Sources */,
+				E67035C31F00C956000C5FA5 /* ForgotPasswordViewController.swift in Sources */,
+				E6C02F1F1F06580100B003B7 /* CameraViewController.swift in Sources */,
+				E63588881F170A6D0073D3F9 /* IntroView.swift in Sources */,
+				E645D9271EF3982700C91617 /* NSData.swift in Sources */,
+				E645D9261EF3982700C91617 /* NSArray.swift in Sources */,
+				E645D92A1EF3982700C91617 /* NSObject.swift in Sources */,
+				E67035C91F00FCC4000C5FA5 /* Menu.swift in Sources */,
+				E64BB5F71F0BB186001AE835 /* HomeView.swift in Sources */,
+				E645D9281EF3982700C91617 /* NSDate.swift in Sources */,
+				E61BE29E1F0A51320062339D /* SplashScreenView.swift in Sources */,
+				E6C02F1A1F0639D900B003B7 /* AddEmployeeView.swift in Sources */,
+				0EEC47201F0F6E1100FBAE89 /* FJFaceDetector.mm in Sources */,
+				E67035C51F00FC70000C5FA5 /* MenuView.swift in Sources */,
+				E64CECF61F0F733900A216A3 /* ExportEmployeeViewController.swift in Sources */,
+				E64CECE81F0F4C3D00A216A3 /* TrainingViewController.swift in Sources */,
+				E635888A1F170B8D0073D3F9 /* ItemIntroView.swift in Sources */,
+				E645D8F71EF3981B00C91617 /* CaptureButton.swift in Sources */,
+				E64CECEE1F0F4F9500A216A3 /* TrainingDetailTableViewCell.swift in Sources */,
+				E61BE2981F0A351E0062339D /* AttendanceView.swift in Sources */,
+				E61BE2A01F0A513F0062339D /* SplashScreenViewController.swift in Sources */,
+				0EEC47081F0F6DDC00FBAE89 /* RealTimeCameraViewController.swift in Sources */,
+				E645D92D1EF3982700C91617 /* UIImage.swift in Sources */,
+				E67035BB1F00ADEF000C5FA5 /* RegisterView.swift in Sources */,
+				E645D92F1EF3982700C91617 /* UITableView.swift in Sources */,
+				E64C703E1F09E3F70040C71C /* AddGroupView.swift in Sources */,
+				E645D8FA1EF3981B00C91617 /* SizeUtils.swift in Sources */,
+				E61B8E281F0CA6EC00FC6034 /* ProfileView.swift in Sources */,
+				E64CECE01F0F350A00A216A3 /* AttendanceDetailView.swift in Sources */,
+				E67035CD1F00FD15000C5FA5 /* MenuHeaderView.swift in Sources */,
+				E64C70401F09E5510040C71C /* AddGroupViewController.swift in Sources */,
+				E645D9321EF3982700C91617 /* UIViewController.swift in Sources */,
+				E61BE2961F0A35050062339D /* AttendanceViewController.swift in Sources */,
+				E645D93F1EF3983500C91617 /* UserDefaultManager.swift in Sources */,
+				E645D92B1EF3982700C91617 /* String.swift in Sources */,
+				E645D9311EF3982700C91617 /* UIView.swift in Sources */,
+				E61B8E2A1F0CCAE800FC6034 /* ChangePasswordView.swift in Sources */,
+				E61B8E2E1F0CDDCA00FC6034 /* Group.swift in Sources */,
+				E62982441F0E3973006A22CB /* Attendance.swift in Sources */,
+				E61B8E2C1F0CCAF800FC6034 /* ChangePasswordViewController.swift in Sources */,
+				E64CECDC1F0F2AD300A216A3 /* AttendanceDate.swift in Sources */,
+				E645D9301EF3982700C91617 /* UITextField.swift in Sources */,
+				E645D8D21EF3952D00C91617 /* AppDelegate.swift in Sources */,
+				E62982461F0E3D98006A22CB /* AttendanceTime.swift in Sources */,
+				E6FD00BE1F18A44500912AFA /* GroupView.swift in Sources */,
+				E64C703A1F09DB6B0040C71C /* EmployeeGroupViewController.swift in Sources */,
+				E645D8FC1EF3981B00C91617 /* Utils.swift in Sources */,
+				E61B8E241F0CA56C00FC6034 /* SettingView.swift in Sources */,
+				E6377D7E1F021D4900023222 /* EmployeeView.swift in Sources */,
+				E64BB5F51F0BAB9C001AE835 /* SettingViewController.swift in Sources */,
+				E64CECF41F0F732900A216A3 /* ExportEmployeeView.swift in Sources */,
+				E649B48A1F1859150014E861 /* CalendarViewController.swift in Sources */,
+				E6C02F1C1F0639E700B003B7 /* AddEmployeeViewController.swift in Sources */,
+				E67035C11F00C93C000C5FA5 /* ForgotPasswordView.swift in Sources */,
+				0EEC47211F0F6E1100FBAE89 /* FJFaceRecognizer.mm in Sources */,
+				E67035BD1F00ADFE000C5FA5 /* LoginViewController.swift in Sources */,
+				E645D95C1EF398DE00C91617 /* MTCompoundButton.m in Sources */,
+				E645D9591EF398DE00C91617 /* AIDatePickerController.m in Sources */,
+				E67035CF1F00FF73000C5FA5 /* User.swift in Sources */,
+				E67035BF1F00AE06000C5FA5 /* RegisterViewController.swift in Sources */,
+				E661F1131F175C1C0087B05B /* EmployeeGroupCollectionViewCell.swift in Sources */,
+				E645D9611EF39B7D00C91617 /* MainView.swift in Sources */,
+				E63588861F170A4B0073D3F9 /* IntroViewController.swift in Sources */,
+				E64CECEC1F0F4E7600A216A3 /* TrainingDetailViewController.swift in Sources */,
+				E64C703C1F09DB9F0040C71C /* EmployeeGroupTableViewCell.swift in Sources */,
+				E64247A21F1FB6CB00C384D2 /* EmployeHeaderView.swift in Sources */,
+				E645D9291EF3982700C91617 /* NSDictionary.swift in Sources */,
+				E64CECE21F0F355A00A216A3 /* AttendanceDetailViewController.swift in Sources */,
+				E645D95B1EF398DE00C91617 /* MTViewHighlighter.m in Sources */,
+				E64247A01F1F9B3300C384D2 /* ImageUrl.swift in Sources */,
+				E67035B91F009EF4000C5FA5 /* LoginView.swift in Sources */,
+				E6922BCD1F258CD4005D67A2 /* File.swift in Sources */,
+				E645D92C1EF3982700C91617 /* UIColor.swift in Sources */,
+				E649B4881F1859050014E861 /* CalendarView.swift in Sources */,
+				E6377D7C1F021AFB00023222 /* Employee.swift in Sources */,
+				E67035CB1F00FD02000C5FA5 /* MenuTableViewCell.swift in Sources */,
+				E645D9251EF3982700C91617 /* Dictionary.swift in Sources */,
+				E67035C71F00FCA7000C5FA5 /* MenuViewController.swift in Sources */,
+				E645D95A1EF398DE00C91617 /* SWRevealViewController.m in Sources */,
+				E64CECF21F0F700900A216A3 /* ExportGroupViewController.swift in Sources */,
+				E64CECF01F0F6E5000A216A3 /* ExportGroupView.swift in Sources */,
+				E64247A41F1FBAAE00C384D2 /* PhotoCollectionViewCell.swift in Sources */,
+				E645D92E1EF3982700C91617 /* UIImageView.swift in Sources */,
+				E61BE29A1F0A41E20062339D /* DatabaseHelper.swift in Sources */,
+				E64CECE61F0F4C2D00A216A3 /* TrainingView.swift in Sources */,
+				E64BB5F31F0BAAED001AE835 /* HomeViewController.swift in Sources */,
+				E6377D821F021D7000023222 /* EmployeeTableViewCell.swift in Sources */,
+				E61B8E261F0CA6DB00FC6034 /* ProfileViewController.swift in Sources */,
+				E6FD00BC1F18A43600912AFA /* GroupViewController.swift in Sources */,
+				E64CECEA1F0F4E6100A216A3 /* TrainingDetailView.swift in Sources */,
+				E6377D801F021D6300023222 /* EmployeeViewController.swift in Sources */,
+				E661F1101F1749330087B05B /* GradientView.swift in Sources */,
+				E645D8F81EF3981B00C91617 /* Global.swift in Sources */,
+				E64CECF81F0F7C3300A216A3 /* ChosenEmployeeTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E645D8DA1EF3952D00C91617 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E645D8DB1EF3952D00C91617 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6396BB41F14689E006F12C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A042DFAFFEAC0E77E3601C49 /* Pods-Attendance.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Attendance/Info-User.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" User";
+				PRODUCT_BUNDLE_IDENTIFIER = citynow.AttendanceUser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Attendance/Attendance-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E6396BB51F14689E006F12C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C0F7687815F0A00A144C27E /* Pods-Attendance.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Attendance/Info-User.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" User";
+				PRODUCT_BUNDLE_IDENTIFIER = citynow.AttendanceUser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Attendance/Attendance-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E645D8DE1EF3952D00C91617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E645D8DF1EF3952D00C91617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E645D8E11EF3952D00C91617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A042DFAFFEAC0E77E3601C49 /* Pods-Attendance.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Attendance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" Admin";
+				PRODUCT_BUNDLE_IDENTIFIER = citynow.Attendance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Attendance/Attendance-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E645D8E21EF3952D00C91617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C0F7687815F0A00A144C27E /* Pods-Attendance.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Attendance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" Admin";
+				PRODUCT_BUNDLE_IDENTIFIER = citynow.Attendance;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Attendance/Attendance-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6396BB31F14689E006F12C7 /* Build configuration list for PBXNativeTarget "AttendanceUser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6396BB41F14689E006F12C7 /* Debug */,
+				E6396BB51F14689E006F12C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E645D8C91EF3952D00C91617 /* Build configuration list for PBXProject "Attendance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E645D8DE1EF3952D00C91617 /* Debug */,
+				E645D8DF1EF3952D00C91617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E645D8E01EF3952D00C91617 /* Build configuration list for PBXNativeTarget "Attendance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E645D8E11EF3952D00C91617 /* Debug */,
+				E645D8E21EF3952D00C91617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E645D8C61EF3952D00C91617 /* Project object */;
+}

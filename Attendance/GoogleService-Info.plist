@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>15307410318-d4mfr0gaorid3lkq05pcvcv3cn6m3e8v.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.15307410318-d4mfr0gaorid3lkq05pcvcv3cn6m3e8v</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCo1As5ycLWppWos5HklnyFjWN0-7TXQK8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>15307410318</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>citynow.Attendance</string>
+	<key>PROJECT_ID</key>
+	<string>attendance-750fe</string>
+	<key>STORAGE_BUCKET</key>
+	<string>attendance-750fe.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:15307410318:ios:c7b4c4599372d497</string>
+	<key>DATABASE_URL</key>
+	<string>https://attendance-750fe.firebaseio.com</string>
+</dict>
+</plist>
